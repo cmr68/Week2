@@ -1,6 +1,7 @@
-let myLib = require("./person.js");
+let {Person} = require("./person.js");
 let hobbiesP = ["Nadar", "Bucear", "Pescar"];
-let persona = new myLib.Person("Laura","Perez",1985,hobbiesP);
-console.log(persona.name,persona.surname,persona.age);
+let persona = new Person("Laura","Perez",1985,hobbiesP);
+console.log(persona);
 console.log(persona.printAll());
 console.log(persona.imc(1.7,68));
+persona.printhobbies();
