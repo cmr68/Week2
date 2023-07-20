@@ -24,7 +24,7 @@ export class Library{
         this.manager = newManager;
     }
     toString(){
-        return l.books;
+        return l.books.toString();
     }
     getNumberOfBooks():number{
         return this.books.length;
