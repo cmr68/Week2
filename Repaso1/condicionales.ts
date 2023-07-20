@@ -1,7 +1,7 @@
-let signoZodiac = (dia:number, mes:string)=>{
-    let zodiac: string;
+let signoZodiac = (dia, mes)=>{
+    let zodiac;
     if(dia < 1 && dia > 31){
-        console.log("Día no válido");
+        zodiac = "Día no válido";
     }else{
         if((dia <= 20 && mes == "enero") || (dia >= 22 && mes == "diciembre")){
             zodiac = "Capricornio";
@@ -20,7 +20,17 @@ let signoZodiac = (dia:number, mes:string)=>{
         }else if((dia >= 23 && mes == "julio") || (dia <= 22 && mes == "agosto")){
             zodiac = "Leo";
         }else if((dia >= 23 && mes == "agosto") || (dia <= 22 && mes == "septiembre")){
-            
+            zodiac = "Virgo";
+        }else if((dia >= 23 && mes == "septiembre") || (dia <= 22 && mes == "obtubre")){
+            zodiac = "Libra";
+        }else if((dia >= 23 && mes == "octubre") || (dia <= 21 && mes == "noviembre")){
+            zodiac = "Escorpio";
+        }else if((dia >= 22 && mes == "noviembre") || (dia <= 21 && mes == "diciembre")){
+            zodiac = "Sagitario";
+        }else{
+            zodiac = "Fecha no encontrada";
         }
     }
+    return zodiac;
 }
+console.log(signoZodiac(-2,"diciembre"));
