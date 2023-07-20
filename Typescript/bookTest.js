@@ -1,5 +1,7 @@
-import { Book } from "./book";
-let book = new Book("El principito", 120, "45785B-154412", "Antoine de Saint-Exupéry", "Gran Travesía");
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var book_1 = require("./book");
+var book = new book_1.Book("El principito", 120, "45785B-154412", "Antoine de Saint-Exupéry", "Gran Travesía");
 console.log("Imprimiendo book\n",book);
 console.log("Prueba de todos los get:\n",
             book.getTitle(),

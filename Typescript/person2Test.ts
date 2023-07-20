@@ -1,4 +1,4 @@
-import{Person} from "./person"
+import{Person} from "./person2"
 let persona = new Person("Lola", 23, "Calle Pedrito Rico");
 persona.printName();
 console.log(persona.getAdress());

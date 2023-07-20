@@ -45,9 +45,9 @@ export class Book{
         this.editorial = nuevoEditorial;
     }
     toString(){
-        return (`Title - ${this.title} \n
-                Numer of Pages - ${this.nPages}\n
-                ISBN - ${this.isbn}\n
+        return (`Title - ${this.title}
+                Numer of Pages - ${this.nPages}
+                ISBN - ${this.isbn}
                 Author - ${this.author}
                 Editorial - ${this.editorial}`);
     }

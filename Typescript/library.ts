@@ -6,11 +6,14 @@ export class Library{
 
     constructor(){
         this.books = [];
-        this.address;
-        this.manager;
+        this.address = "";
+        this.manager = "";
     }
 
     //Métodos
+    getBook():Book[]{
+        return this.books;
+    }
     getAddress():string{
         return this.address;
     }
@@ -24,7 +27,7 @@ export class Library{
         this.manager = newManager;
     }
     toString(){
-        return l.books.toString();
+        return this.books.toString();
     }
     getNumberOfBooks():number{
         return this.books.length;
