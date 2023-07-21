@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var vector_1 = require("./vector");
+var v1 = new vector_1.Vector(5, 50);
+var v2 = new vector_1.Vector(5, 50);
+v1.print();
+v2.print();
+var suma = v1.add(v2);
+var resta = v1.subs(v2);
+var mult = v1.mult(v2);
+var multNum = v1.multNumber(2);
+console.log("suma:\n", suma, "resta:\n", resta, "mult:\n", mult, "multNum:\n", multNum);
