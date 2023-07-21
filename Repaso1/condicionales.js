@@ -1,6 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isEven = void 0;
 var signoZodiac = function (dia, mes) {
     var zodiac;
-    if (dia < 1 && dia > 31) { //¡¡NO FUNCIONA!!
+    if (dia < 1 || dia > 31) {
         zodiac = "Día no válido";
     }
     else {
@@ -46,7 +49,7 @@ var signoZodiac = function (dia, mes) {
     }
     return zodiac;
 };
-var continent = function (country) {
+var continentt = function (country) {
     var continent;
     if (country == "España" || country == "Francia" || country == "Polonia") {
         continent = "Europa";
@@ -55,7 +58,7 @@ var continent = function (country) {
         continent = "America";
     }
     else if (country == "Guinea" || country == "Sudan" || country == "Uganda") {
-        country = "Africa";
+        continent = "Africa";
     }
     else if (country == "Australia" || country == "Nueva Zelanda" || country == "Fiyi") {
         continent = "Oceania";
@@ -67,13 +70,14 @@ var continent = function (country) {
 };
 var isEven = function (num) {
     if (num % 2 == 0) {
-        console.log("El numero", num, "es par");
+        console.log(num, "es par");
     }
     else {
-        console.log("El numero", num, "es impar");
+        console.log(num, "es impar");
     }
 };
+exports.isEven = isEven;
 //Main
-console.log(signoZodiac(-2, "diciembre"));
-console.log(continent("España"));
-isEven(5);
+// console.log(signoZodiac(2,"diciembre"));
+// console.log(continentt("España"));
+// isEven(5);
