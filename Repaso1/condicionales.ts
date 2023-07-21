@@ -1,6 +1,6 @@
-let signoZodiac = (dia, mes)=>{
-    let zodiac;
-    if(dia < 1 && dia > 31){
+const signoZodiac = (dia:number, mes:string)=>{
+    let zodiac: string;
+    if(dia < 1 && dia > 31){ //¡¡NO FUNCIONA!!
         zodiac = "Día no válido";
     }else{
         if((dia <= 20 && mes == "enero") || (dia >= 22 && mes == "diciembre")){
@@ -33,4 +33,32 @@ let signoZodiac = (dia, mes)=>{
     }
     return zodiac;
 }
+
+const continent = (country:string) =>{
+    let continent:string;
+    if(country=="España" || country == "Francia" || country == "Polonia"){
+        continent = "Europa";
+    }else if(country == "Canada" || country == "Estados Unidos" || country == "Mexico"){
+        continent = "America";
+    }else if(country == "Guinea" || country == "Sudan" || country == "Uganda"){
+        country = "Africa";
+    }else if(country == "Australia" || country == "Nueva Zelanda" || country == "Fiyi" ){
+        continent = "Oceania";
+    }else if(country == "China" || country == "India" || country == "Nepal"){
+        continent = "Asia";
+    }
+    return continent;
+}
+
+const isEven = (num:number) =>{
+    if(num %2 == 0){
+        console.log("El numero", num, "es par");
+    }else{
+        console.log("El numero", num, "es impar");
+    }
+}
+
+//Main
 console.log(signoZodiac(-2,"diciembre"));
+console.log(continent("España"));
+isEven(5);
