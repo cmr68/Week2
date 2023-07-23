@@ -24,8 +24,12 @@ var Library = /** @class */ (function () {
         this.manager = newManager;
     };
     Library.prototype.toString = function () {
-        return this.books.toString();
-    };
+        var result = "Adress: ".concat(this.address, "\n Manager: ").concat(this.manager, "\n Books in the Library:\n");
+        this.books.forEach(function (element) {
+            result += element.toString() + "\n";
+        });
+        return result;
+    }; 
     Library.prototype.getNumberOfBooks = function () {
         return this.books.length;
     };

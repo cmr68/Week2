@@ -5,6 +5,8 @@ export class Contacts{
         this.people = [];
     }
     printCalendar():void{
-        console.log(this.people);
+        this.people.forEach(element =>{
+            console.log(element);
+        })
     }
 }

@@ -8,10 +8,14 @@ var b2 = new book_1.Book("LIBRO 2", 555, "774569-5465566D", "AUTOR 2", "EDITORIA
 l.setAddres("Calle Nunca llega");
 l.setManager("Juan Perez");
 l.getBook().push(b1, b2);
-var findAuthor = l.findByAuthor("Juan");
+var findAuthor = l.findByAuthor("AUTOR 1");
 console.log("Autor encontrado:", findAuthor);
 //imprimir libros
 console.log(l.toString());
 //get y set
 console.log("Probando gets:\n", l.getAddress(), l.getManager(), l.getNumberOfBooks());
-console.log("Probando sets:\n", l.setAddres("Nueva direccion"), l.setManager("Nuevo autor"));
+console.log("Probando sets:\n");
+l.setAddres("Nueva direccion");
+l.setManager("Nuevo autor");
+console.log("Probando toString()\n");
+console.log(l.toString());

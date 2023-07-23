@@ -26,9 +26,15 @@ export class Library{
     setManager(newManager: string):void{
         this.manager = newManager;
     }
-    toString(){
-        return this.books.toString();
+
+    toString():string{
+        let result = `Adress: ${this.address}\n Manager: ${this.manager}\n Books in the Library:\n`;
+        this.books.forEach((element) =>{
+            result += element.toString() + "\n";
+        });
+        return result;
     }
+    
     getNumberOfBooks():number{
         return this.books.length;
     }

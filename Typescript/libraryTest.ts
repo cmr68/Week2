@@ -6,7 +6,7 @@ let b2 = new Book("LIBRO 2", 555, "774569-5465566D", "AUTOR 2", "EDITORIAL 2");
  l.setAddres("Calle Nunca llega");
  l.setManager("Juan Perez");
  l.getBook().push(b1,b2);
- let findAuthor = l.findByAuthor("Juan");
+ let findAuthor = l.findByAuthor("AUTOR 1");
  console.log("Autor encontrado:",findAuthor);
 
  //imprimir libros
@@ -16,6 +16,9 @@ let b2 = new Book("LIBRO 2", 555, "774569-5465566D", "AUTOR 2", "EDITORIAL 2");
              l.getAddress(),
              l.getManager(),
              l.getNumberOfBooks());
-console.log("Probando sets:\n",
-             l.setAddres("Nueva direccion"),
-             l.setManager("Nuevo autor"));
+//Probando sets
+l.setAddres("Nueva direccion");
+l.setManager("Nuevo autor");
+
+console.log("Probando toString()\n");
+console.log(l.toString());
