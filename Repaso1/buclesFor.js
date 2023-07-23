@@ -30,10 +30,10 @@ var add = function (myWords) {
 };
 exports.add = add;
 //Main
-evenNumbers(20);
-var arr = [1, 2, 3, 4, 5, 6];
-var revertArr = myRevert(arr);
-console.log("revertir arr", revertArr);
-var colores = ["lila", "morado", "amarillo", "beig", "negro", "cian", "azul"];
-isRainbow(colores);
-(0, exports.add)(colores);
+// evenNumbers(20);
+// let arr = [1,2,3,4,5,6];
+// let revertArr: number[] = myRevert(arr);
+// console.log("revertir arr",revertArr);
+// let colores = ["lila", "morado", "amarillo", "beig", "negro", "cian", "azul"];
+// isRainbow(colores);
+// add(colores);

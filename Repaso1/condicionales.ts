@@ -51,7 +51,7 @@ const continentt = (country:string):string =>{
 }
 
 export const isEven = (num:number):void =>{
-    if(num %2 == 0){
+    if(num %2 === 0){
         console.log(num, "es par");
     }else{
         console.log(num, "es impar");

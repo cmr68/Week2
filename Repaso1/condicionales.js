@@ -49,27 +49,23 @@ var signoZodiac = function (dia, mes) {
     }
     return zodiac;
 };
-var continentt = function (country) {
-    var continent;
-    if (country == "España" || country == "Francia" || country == "Polonia") {
+/*const continentt = (country:string):string =>{
+    let continent:string;
+    if(country=="España" || country == "Francia" || country == "Polonia"){
         continent = "Europa";
-    }
-    else if (country == "Canada" || country == "Estados Unidos" || country == "Mexico") {
+    }else if(country == "Canada" || country == "Estados Unidos" || country == "Mexico"){
         continent = "America";
-    }
-    else if (country == "Guinea" || country == "Sudan" || country == "Uganda") {
+    }else if(country == "Guinea" || country == "Sudan" || country == "Uganda"){
         continent = "Africa";
-    }
-    else if (country == "Australia" || country == "Nueva Zelanda" || country == "Fiyi") {
+    }else if(country == "Australia" || country == "Nueva Zelanda" || country == "Fiyi" ){
         continent = "Oceania";
-    }
-    else if (country == "China" || country == "India" || country == "Nepal") {
+    }else if(country == "China" || country == "India" || country == "Nepal"){
         continent = "Asia";
     }
     return continent;
-};
+}*/
 var isEven = function (num) {
-    if (num % 2 == 0) {
+    if (num % 2 === 0) {
         console.log(num, "es par");
     }
     else {
