@@ -44,26 +44,30 @@ var signoZodiac = function (dia, mes) {
             zodiac = "Sagitario";
         }
         else {
-            zodiac = "Fecha no encontrada";
+            zodiac = "Mes no encontrado";
         }
     }
     return zodiac;
 };
-/*const continentt = (country:string):string =>{
-    let continent:string;
-    if(country=="España" || country == "Francia" || country == "Polonia"){
+var continentt = function (country) {
+    var continent;
+    if (country == "España" || country == "Francia" || country == "Polonia") {
         continent = "Europa";
-    }else if(country == "Canada" || country == "Estados Unidos" || country == "Mexico"){
+    }
+    else if (country == "Canada" || country == "Estados Unidos" || country == "Mexico") {
         continent = "America";
-    }else if(country == "Guinea" || country == "Sudan" || country == "Uganda"){
+    }
+    else if (country == "Guinea" || country == "Sudan" || country == "Uganda") {
         continent = "Africa";
-    }else if(country == "Australia" || country == "Nueva Zelanda" || country == "Fiyi" ){
+    }
+    else if (country == "Australia" || country == "Nueva Zelanda" || country == "Fiyi") {
         continent = "Oceania";
-    }else if(country == "China" || country == "India" || country == "Nepal"){
+    }
+    else if (country == "China" || country == "India" || country == "Nepal") {
         continent = "Asia";
     }
     return continent;
-}*/
+};
 var isEven = function (num) {
     if (num % 2 === 0) {
         console.log(num, "es par");
@@ -74,6 +78,6 @@ var isEven = function (num) {
 };
 exports.isEven = isEven;
 //Main
-// console.log(signoZodiac(2,"diciembre"));
-// console.log(continentt("España"));
-// isEven(5);
+console.log(signoZodiac(2, "pepe"));
+console.log(continentt("España"));
+(0, exports.isEven)(5);

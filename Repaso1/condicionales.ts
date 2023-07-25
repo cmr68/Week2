@@ -28,7 +28,7 @@ const signoZodiac = (dia:number, mes:string):string =>{
         }else if((dia >= 22 && mes == "noviembre") || (dia <= 21 && mes == "diciembre")){
             zodiac = "Sagitario";
         }else{
-            zodiac = "Fecha no encontrada";
+            zodiac = "Mes no encontrado";
         }
     }
     return zodiac;
@@ -58,6 +58,6 @@ export const isEven = (num:number):void =>{
     }
 }
 //Main
-// console.log(signoZodiac(2,"diciembre"));
-// console.log(continentt("España"));
-// isEven(5);
+console.log(signoZodiac(2,"pepe"));
+console.log(continentt("España"));
+isEven(5);

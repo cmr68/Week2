@@ -2,7 +2,7 @@
 const hasEven = (myNums:number[]):boolean =>{
     let i=0;
     let hayPar = false;
-    while(hayPar==false){
+    while(hayPar==false && i < myNums.length){
         if(myNums[i]%2 == 0){
             hayPar = true;
         }
