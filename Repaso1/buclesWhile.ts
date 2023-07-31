@@ -34,7 +34,7 @@ const startWithM = (myNames:string[]): boolean =>{
     }
     return startM;
 }
-let arrayNum = [1,2,3,4,5];
+let arrayNum = [1,3,5];
 console.log("hay par",hasEven(arrayNum));
 hasEven2(arrayNum);
 let arrayStr = ["Maria", "Mar", "Monte"];

@@ -2,7 +2,7 @@
 var hasEven = function (myNums) {
     var i = 0;
     var hayPar = false;
-    while (hayPar == false) {
+    while (hayPar == false && i < myNums.length) {
         if (myNums[i] % 2 == 0) {
             hayPar = true;
         }
@@ -33,7 +33,7 @@ var startWithM = function (myNames) {
     }
     return startM;
 };
-var arrayNum = [1, 2, 3, 4, 5];
+var arrayNum = [1, 3, 5];
 console.log("hay par", hasEven(arrayNum));
 hasEven2(arrayNum);
 var arrayStr = ["Maria", "Mar", "Monte"];
