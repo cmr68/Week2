@@ -8,9 +8,9 @@ var Triangle = /** @class */ (function () {
         this.vertex3 = vertex3;
     }
     Triangle.prototype.calculateLengthSides = function () {
-        var side1 = this.vertex1.calculateDistance(this.vertex1);
-        var side2 = this.vertex2.calculateDistance(this.vertex2);
-        var side3 = this.vertex3.calculateDistance(this.vertex3);
+        var side1 = this.vertex1.calculateDistance(this.vertex2);
+        var side2 = this.vertex2.calculateDistance(this.vertex3);
+        var side3 = this.vertex3.calculateDistance(this.vertex1);
         return [side1, side2, side3];
     };
     return Triangle;

@@ -9,9 +9,9 @@ export class Triangle{
         this.vertex3 = vertex3;
     }
     calculateLengthSides(): number[]{
-        let side1 = this.vertex1.calculateDistance(this.vertex1);
-        let side2 = this.vertex2.calculateDistance(this.vertex2);
-        let side3 = this.vertex3.calculateDistance(this.vertex3);
+        let side1 = this.vertex1.calculateDistance(this.vertex2);
+        let side2 = this.vertex2.calculateDistance(this.vertex3);
+        let side3 = this.vertex3.calculateDistance(this.vertex1);
         
         return [side1,side2,side3];
     }
